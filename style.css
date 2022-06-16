@@ -1,0 +1,133 @@
+:root {
+  --primary-color: rgba(0, 97, 209, 1);
+  --neutral-color-medium: #999;
+  --neutral-color-light: #ddd;
+  --neutral-color-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.container {
+  background-color: var(--neutral-color-white);
+  padding: 3.6rem;
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  /* color: var(--primary-color); */
+}
+
+.hr {
+  width: 100%;
+  border-bottom: 2px solid var(--neutral-color-light);
+}
+
+/* ****************************** */
+/* Inputs */
+/* ****************************** */
+.inputs {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.input-container {
+  display: flex;
+  gap: 1.8rem;
+  border-bottom: 2px solid var(--neutral-color-light);
+  padding: 0.9rem;
+}
+
+.label {
+  font-size: 1.8rem;
+  color: var(--neutral-color-medium);
+}
+
+.input {
+  border: none;
+  outline: none;
+  max-width: 24rem;
+}
+
+.input,
+.total {
+  text-align: right;
+  flex-grow: 1;
+  font-size: 2.4rem;
+}
+
+/* ****************************** */
+/* Buttons */
+/* ****************************** */
+.btn-container {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.btn {
+  font-size: 1.8rem;
+  border: none;
+  padding: 1.8rem 3.6rem;
+  border-radius: 100vh;
+  transition: all 0.2s ease-out;
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(110%);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--neutral-color-white);
+}
+
+.btn-secondary {
+  background-color: var(--neutral-color-light);
+}
+
+/* ****************************** */
+/* Totals */
+/* ****************************** */
+.totals {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.9rem;
+}

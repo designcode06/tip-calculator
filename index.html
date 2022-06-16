@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading-primary">Tip Calculator</h1>
+
+      <div class="inputs">
+        <div class="input-container">
+          <label for="input-bill" class="label">Bill</label>
+          <input type="text" class="input" id="input-bill" />
+          <label for="input-bill" class="label">$</label>
+        </div>
+        <div class="input-container">
+          <label for="input-tip" class="label">Tip</label>
+          <input type="text" class="input" id="input-tip" />
+          <label for="input-tip" class="label">%</label>
+        </div>
+      </div>
+
+      <div class="totals">
+        <div class="total-container">
+          <h2 class="heading-secondary">Tip</h2>
+          <p class="total" id="tip"></p>
+          <span class="label">$</span>
+        </div>
+        <div class="total-container">
+          <h2 class="heading-secondary heading-total">Total</h2>
+          <p class="total" id="total"></p>
+          <span class="label">$</span>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="btn-container">
+        <button class="btn btn-primary" id="btn-calculate">Calculate</button>
+        <button class="btn btn-secondary" id="btn-clear">Clear</button>
+      </div>
+    </div>
+  </body>
+</html>
