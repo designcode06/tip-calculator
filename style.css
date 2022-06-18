@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgba(0, 97, 209, 1);
+  --primary-color: #0057e2;
   --neutral-color-medium: #999;
   --neutral-color-light: #ddd;
   --neutral-color-white: #fff;
@@ -22,6 +22,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.8rem;
   background-color: var(--primary-color);
 }
 
@@ -34,6 +35,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
+  max-width: 50rem;
 }
 
 .heading-primary {
@@ -44,12 +46,11 @@ body {
 
 .heading-secondary {
   font-size: 2.4rem;
-  /* color: var(--primary-color); */
 }
 
 .hr {
   width: 100%;
-  border-bottom: 2px solid var(--neutral-color-light);
+  border-bottom: 0.2rem solid var(--neutral-color-light);
 }
 
 /* ****************************** */
@@ -63,7 +64,7 @@ body {
 .input-container {
   display: flex;
   gap: 1.8rem;
-  border-bottom: 2px solid var(--neutral-color-light);
+  border-bottom: 0.2rem solid var(--neutral-color-light);
   padding: 0.9rem;
 }
 
@@ -75,7 +76,7 @@ body {
 .input {
   border: none;
   outline: none;
-  max-width: 24rem;
+  width: 100%;
 }
 
 .input,
@@ -131,4 +132,23 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 0.9rem;
+}
+
+/* ****************************** */
+/* Media Quries */
+/* ****************************** */
+@media (max-width: 25em) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    background-color: var(--neutral-color-white);
+  }
+}
+
+@media (max-width: 20em) {
+  html {
+    font-size: 50%;
+  }
 }
